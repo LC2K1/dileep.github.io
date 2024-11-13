@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wibsite</title>
+<style>
+  *{
+    margin: 0px;
+    padding:0px;
+
+  }
+  
+  .logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img{
+    width: 33%;
+    border-radius: 50%;
+  }
+  .navbar{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    Position:sticky;
+    cursor: pointer;
+    top:0px;
+    height: 100px;
+
+  }
+  .nav-list{ width:70%;
+            background-color:none;
+            display: flex;
+            align-items: center;
+  } 
+  .nav-list li{  list-style: none;
+               padding:26px 30px;
+
+  }
+  .nav-list li a{ text-decoration: none;
+                 color:white;
+                 font-size: 20px;
+                 font-family: 'Times New Roman', Times, serif;
+
+  }
+  .nav-list li a:hover{
+    color:gray;
+
+  }
+  .rightNav{
+    background-color:none;
+    width:30%;
+    text-align: right;
+  }
+  #Search{
+          Padding:5px;
+          font-size:17px;
+          border:2px solid gray;
+          border-radius: 9px;
+  }
+  .background{
+    background:rgba(0,0,0,0.7)url('\images (1).jpg');
+    background-size:cover;
+    background-blend-mode: darken;
+  }
+  .box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 50%;
+    margin:auto;
+    height:80%;
+
+  }
+  .firstSection{
+    height: 100vh;
+  }
+  .firstHalf{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .secondHalf{
+    width:40%;
+  }
+  .secondHalf img{
+    width: 250px;
+    height:210px;
+    border:4px solid white;
+    border-radius: 200px;
+    display:block;
+    margin:auto;
+  }
+  .text-big{
+    font-size:41px;
+    
+    
+  }
+  .text-small{
+    font-size:20px;
+    
+  }
+  .btn{
+    padding:8px 20px;
+    margin:7px 3px;
+    border:2px solid white;
+    border-radius: 8px;
+    font-size:16px;
+    color:white;
+    background: none;
+    
+    cursor: pointer;
+  }
+  .btn-sm{
+    vertical-align:middle;
+    padding:6px 10px;
+    font-size: 16px;
+  }
+  .btn-dark{
+    color:black;
+    border:2px solid black;
+  }
+  .thumbnail img{
+                 border:2px solid black;
+                 border-radius: 26px;
+                 margin-top:19px;
+                 width:300px;
+  }
+  .secRight{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 80%;
+    flex-direction: column;
+  }
+  .secLeft{
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    max-width: 80%;
+    margin:auto;
+    flex-direction:column;
+  }
+  .paras{
+          padding:0px 65px;
+  }  
+
+  .imgfluid{
+    width: 320px;
+    height: 270px;
+    border-radius: 2px solid gray;
+
+  }
+  .Contact{
+    background-color: #f6f5f4;
+    height: 833px;
+    font-size:25px;
+  }
+  .text-center{
+    text-align: center;
+    padding:30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .form{  max-width: 62%;
+          margin: 25px auto;
+  }
+  .form-input{
+    margin:14px 0;
+    width: 100%;
+    padding:5px 3px;
+    font-size:19px;
+    border:2px solid gray;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .btn-dark{
+    color:black;
+    border:2px solid gray;
+    
+  }
+  .text-footer{
+    text-align: center;
+    padding:30px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+  }
+
+  .burger{position: absolute;
+    cursor:pointer;
+    right:5%;
+    top:15px;
+    display: none;
+
+  }
+  .line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin:5px 3px;
+  }
+
+  @media screen and (max-width:1388px){
+    .nav-list{
+      flex-direction: column;
+    }
+    .navbar{
+      flex-direction: column;
+      transition: all 0.3s ease-out;
+      height:447px;
+    }
+    .rightNav{
+      text-align: center;
+    }
+    .box-main{
+      flex-direction: column-reverse;
+      max-width: 100%;
+    }
+    #search{
+      width:100%;
+    }
+    .burger{
+      display: block;
+    }
+    .h-nav-resp{
+      height:72px;
+    }
+    .v-class-resp{
+      opacity:0;
+    }
+    .secRight{
+      flex-direction: column;
+    } */
+    .text-small{
+      text-align:center;
+    }
+    .text-big{
+      text-align: center;
+    }
+    .buttons{
+      text-align: center;
+    }
+   .secLeft
+    .paras{
+      padding:0px;
+    }
+
+    
+
+  }
+
+</style>
+</head>
+<body>
+<nav class="navbar background h-nav-resp">
+<ul class="nav-list v-class-resp">
+<div class="logo"><img src="C:\Users\admin\Desktop\Dev ke Dev Mahadev.png"alt="logo"></div>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#Services">Services</a></li>
+<li><a href="#Contact">Contact Us</a></li>
+</ul>
+<div class="rightNav v-class-resp">
+<input type="text"name="Search"id="Search">
+<button class="btn btn-sm">Search</button>
+</div>
+<div class="burger">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+</nav>
+<section class="background firstSection">
+<div class="box-main">
+<div class="firstHalf">
+
+<p class="text-big">Protection of Environment</p>
+<p class="text-small">Concerns relating to pollution and the disposal of the large amount of ash from coal based power stations, which are the mainstay of India's power generation, are being addressed through strategies to promote environmentally sustainable power development.
+</p>
+
+<div class="buttons">
+<button class="btn"><b>Subscribe</b></button>
+<button class="btn"><b>Watch Video</b></button>
+</div>
+</div>
+<div class="secondHalf">
+<img src=" Pla.jpg"alt="Proction"> 
+</div>
+</div>
+</section>
+<section class="secRight">
+  <div class="paras">
+<p class="SectionTag text-big">Special Purpose Vehicle (SPV) for Afforestation:-</p>
+<p class="SectionSubTag text-small">A Special Purpose Vehicle is being set up jointly by NTPC and other Central Power Sector Undertakings as a Registered Society to take up afforestation and environmental measures in order to reduce the carbon dioxide in the atmosphere. The objectives of the Society shall be to:
+
+  Undertake fruitful channelising of investments by members to increase the national forest cover.
+  Identify suitable lands for afforestation for power projects of NTPC and other members through Ministry of Environment and Forests (MOEF) which will coordinate with the State Forest Departments/District Rural Development Authority etc.
+  Facilitate quick procurement of forest clearance for the forestland proposed to be acquired by NTPC and other members for the future projects to be set up.
+  Interact with MOEF to score off the necessary compensatory afforestation required for projects of NTPC and other members, which needs diversion of forestland.
+  It is noteworthy that NTPC has already planted over 1.45 crore trees, which is one of the biggest afforestation efforts in the country. In fact the ambient temperature around the Ramagundam Station of NTPC has come down by 30 Celsius due to the afforestation done by NTPC as revealed in a study by the National Remote Sensing Agency (NRSA), Hyderabad.
+  
+  
+</p>
+</div>
+<div class="thumbnail">
+  <img src="C:\Users\admin\Desktop\dileepverma.jpg"alt="Plantation" class="imgFluid"width="320px" height="270px">
+</div>
+</section>   
+<section class="secLeft">
+  <div class="paras">
+<p class="SectionTag text-big">Fly Ash Utilisation Action Plan:-</p>
+<p class="SectionSubTag text-small">Coal / Lignite based Thermal Power Generation has been the backbone of power capacity addition in the country. Indian coal is of low grade with ash content of the order of 30-60 % in comparison to imported coals which have a low ash content of the order of 2-20%.  A large quantity of ash is, thus being generated at Coal / Lignite based Thermal Power Stations in the country, which not only requires a large area of precious land for its disposal but is also one of the sources of pollution of both air and water.
+  All Coal / Lignite based Thermal Power are required to follow the Ministry of Environment, Forests (MoEF) Notifications on fly ash utilization to achieve 100% utilization of fly ash. Ministry of Environment, Forest and Climate Change (MoEF&CC) has now issued a revised Notification on 31st December 2021 in supersession of earlier Notifications in order to widen the scope of ash utilization.
+  CEA compiles annual report on Fly Ash Generation at Coal / Lignite based Thermal Power Stations and its utilization in the country. As per the CEA report, ash utilization during Year 2021-22:
+</p>
+</div>
+<div class="thumbnail">
+  <img src="C:\Users\admin\Desktop\Pla.jpg"alt="Plantation" class="imgFluid"width="320px" height="270px">
+</div>
+</section>
+<section class="secRight">
+  <div class="paras">
+<p class="SectionTag text-big ">Clean Development Mechanism (CDM):-</p>
+<p class="SectionSubTag text-small">To address increasing concerns related to the environment and to improve environmental performance, the services of Tata Energy Research Institute (TERI) have been engaged for providing consultancy services to the Ministry of Power on CDM. The terms of reference include project formulation, base line surveys for each project, negotiations with the CDM parties, identification of the counterpart CDM parties from the developed countries, cost of CO2 monitoring and verification of CO2 emission reduction and supervision of project implementation.<br>
+  Established in November 1975 for nation's Sustainable Power Development, National Thermal Power Corporation Ltd. (NTPC) is today India's largest power utility with an installed capacity of 21,749 MW (19% of India's installed capacity) contributing to 26% of total generation in the country, with high availability factor of its power plants. NTPC has plans to double its capacity. NTPC has recently diversified into the hydro sector and formed for joint venture companies for distribution, R&M, etc. Environment Management is a high priority area in the company and several Policies have been formulated to ensure generation of green power. Through persuasion of sound environmental management systems and practices , NTPC's 18 stations have been accredited with ISO:14001 certification. As a responsible corporate citizen, NTPC is a member of Global Compact a UN initiative for Corporate social responsibility.
+</p>
+</div>
+<div class="thumbnail">
+  <img src="  images.jpg"alt="Plantation" class="imgFluid"width="320px" height="270px">
+</div>
+</section>
+
+<section class="Contact" id="Contact Us">
+  <h1 class="text-center">Contact Us</h1>
+  <div class="form">
+<input class="form-input" type="text"name="name" id="name"  Placeholder="Enter Your name">
+<input class="form-input" type="text"name="name"  id ="Email" Placeholder="Enter Your Email Id">
+<input  class="form-input" type="text"name="name"  id="Phone" placeholder="Enter Your Phone">
+<textarea class="form-input" name="text"id="" cols="30" rows="10">Ellaborate your conceration</textarea>
+
+<button class="btn btn-dark">Submit</button>
+
+  </div>
+</section>
+<footer class="background">
+  <p class="text-footer">
+  
+  Copyright &copy;2027 www.iEducate.com-All rights reserved</p>
+</footer>
+</body>
+<script>
+  burger = document.querySelector('.burger')
+  navbar = document.querySelector('.navbar')
+  navList = document.querySelector('.nav-list')
+  rightNav = document.querySelector('.rightNav')
+  
+
+
+  burger.addEventListener('click',()=>{
+    rightNav.classList.toggle('v-class-resp');
+    navList.classList.toggle('v-class-resp');
+    navbar.classList.toggle('h-class-resp');
+  })
+</script>
+</html>
